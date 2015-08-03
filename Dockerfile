@@ -1,4 +1,4 @@
-FROM php:5.6-apache:latest
+FROM php:5.6-apache
 MAINTAINER riley.ross@gmail.com
 
 RUN apt-get update && \
