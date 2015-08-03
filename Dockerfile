@@ -6,7 +6,7 @@ RUN apt-get update && \
     gem install bundler
     
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
-RUN docker-php-ext-install mbstring
+RUN docker-php-ext-install mbstring && docker-php-ext-install gd
     
 # install composer to path
 RUN curl -sS https://getcomposer.org/installer | php
