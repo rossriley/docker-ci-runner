@@ -1,4 +1,4 @@
-FROM sameersbn/gitlab-ci-runner:latest
+FROM php:5.6-apache:latest
 MAINTAINER riley.ross@gmail.com
 
 RUN apt-get update && \
