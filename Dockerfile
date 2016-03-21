@@ -2,7 +2,7 @@ FROM php:5.6-apache
 MAINTAINER riley.ross@gmail.com
 
 RUN apt-get update && \
-    apt-get install -y git ruby-full libpq-dev git libpng-dev libjpeg62-turbo-dev libfreetype6-dev wget zlib1g-dev && \
+    apt-get install -y git ruby-full libpq-dev git libpng-dev libjpeg62-turbo-dev libfreetype6-dev wget zlib1g-dev lxc && \
     gem install bundler
     
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
